@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Style Homepage with Tailwind CSS</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-gradient-to-b from-black/80 to-transparent"
+    >
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold">NETFLIX</h1>
+
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">TV Shows</a>
+          <a href="#" class="hover:text-gray-300">Movies</a>
+          <a href="#" class="hover:text-gray-300">Latest</a>
+          <a href="#" class="hover:text-gray-300">My List</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative h-[85vh] w-full bg-cover bg-center bg-no-repeat"
+        style="
+          background-image: url('https://image.tmdb.org/t/p/original/9ZlGiEjji2LNPSYyVZOGwoT9S5.jpg');
+        "
+      >
+        <!-- Dark Gradient Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"
+        ></div>
+
+        <!-- Hero Content -->
+        <div
+          class="relative z-10 max-w-7xl mx-auto h-full flex flex-col justify-center px-6"
+        >
+          <h2
+            class="text-4xl md:text-6xl font-extrabold max-w-xl leading-tight"
+          >
+            The Witcher: Season 3
+          </h2>
+
+          <p class="mt-4 max-w-md text-gray-300">
+            Monsters, magic, and destiny collide in this action-packed fantasy
+            series. Follow Geralt as he navigates a world full of danger and
+            betrayal.
+          </p>
+
+          <div class="mt-6 flex gap-4">
+            <button
+              class="bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-300 transition"
+            >
+              ▶ Play
+            </button>
+            <button
+              class="bg-gray-700/60 px-6 py-3 rounded-md font-semibold hover:bg-gray-600 transition"
+            >
+              ℹ More Info
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Movie Row -->
+      <section class="py-10">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2 class="text-2xl font-semibold mb-4">Popular on Netflix</h2>
+
+          <div class="group relative">
+            <!-- Scrollable Container -->
+            <div
+              class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth pr-6"
+            >
+              <!-- Movie Items -->
+              <div
+                class="min-w-[150px] md:min-w-[200px] rounded-md overflow-hidden bg-gray-800 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
+                <img
+                  src="https://image.tmdb.org/t/p/w300/1QeOZtPcxr4xFg1l8kdFMvx6bSX.jpg"
+                  alt="Poster"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div
+                class="min-w-[150px] md:min-w-[200px] rounded-md overflow-hidden bg-gray-800 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
+                <img
+                  src="https://image.tmdb.org/t/p/w300/8Y1N91YQ8VE3DybMT0SqnXpress.jpg"
+                  alt="Poster"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div
+                class="min-w-[150px] md:min-w-[200px] rounded-md overflow-hidden bg-gray-800 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
+                <img
+                  src="https://image.tmdb.org/t/p/w300/jZIYaISP3GBSrVOPfrp98AMa8Ng.jpg"
+                  alt="Poster"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <!-- Duplicate for demo -->
+              <div
+                class="min-w-[150px] md:min-w-[200px] rounded-md overflow-hidden bg-gray-800 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
+                <img
+                  src="https://image.tmdb.org/t/p/w300/1QeOZtPcxr4xFg1l8kdFMvx6bSX.jpg"
+                  alt="Poster"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 mt-16 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-6 text-gray-400">
+        <p class="mb-6">
+          Questions?
+          <a href="#" class="underline hover:text-gray-300">Contact us</a>
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+          <a href="#" class="hover:text-gray-300">FAQ</a>
+          <a href="#" class="hover:text-gray-300">Investor Relations</a>
+          <a href="#" class="hover:text-gray-300">Ways to Watch</a>
+          <a href="#" class="hover:text-gray-300">Corporate Information</a>
+
+          <a href="#" class="hover:text-gray-300">Help Center</a>
+          <a href="#" class="hover:text-gray-300">Jobs</a>
+          <a href="#" class="hover:text-gray-300">Terms of Use</a>
+          <a href="#" class="hover:text-gray-300">Contact Us</a>
+
+          <a href="#" class="hover:text-gray-300">Account</a>
+          <a href="#" class="hover:text-gray-300">Redeem Gift Cards</a>
+          <a href="#" class="hover:text-gray-300">Privacy</a>
+          <a href="#" class="hover:text-gray-300">Speed Test</a>
+
+          <a href="#" class="hover:text-gray-300">Media Center</a>
+          <a href="#" class="hover:text-gray-300">Buy Gift Cards</a>
+          <a href="#" class="hover:text-gray-300">Cookie Preferences</a>
+          <a href="#" class="hover:text-gray-300">Legal Notices</a>
+        </div>
+
+        <p class="text-sm">Netflix Clone UI with Tailwind CSS</p>
+      </div>
+    </footer>
+  </body>
+</html>
